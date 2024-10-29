@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sign-up.css">
+    <script src="sign-up.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="front">
+        <div class="splash">
+            <div class="logo">
+                <img src="assets/images/odin-lined.png" alt="" class="logoImg">
+                <div class="logoTxt">ODIN</div>
+            </div>
+            <div class="imgCredit">Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/">Unsplash</a>.</div>
+        </div>
+        
+        <div class="signUpBody">
+            <div class="info">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+                </br>Sign up <em>now</em> to get started.
+                </br> </br>You <em>know</em> you want to.</p>
+            </div>
+    
+            <div class="formContainer">
+                <form action="/" method="post" class="signUpForm">
+    
+                    <fieldset>
+                        <p>Let's do this!</p>
+                        <div class="formRow">
+                            <div class="inputField">
+                                <label for="firstName">*FIRST NAME</label>
+                                <input type="text" name="firstName" id="firstName" required>
+                            </div>
+                            
+                            <div class="inputField">
+                                <label for="lastName">*LAST NAME</label>
+                                <input type="text" name="lastName" id="lastName" required>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="formRow">
+                            <div class="inputField">
+                                <label for="lastName">*EMAIL</label>
+                                <input type="email" name="email" id="email" required>
+                            </div>
+                            
+        
+                            <div class="inputField">
+                                <label for="phone">*PHONE NUMBER</label>
+                                <input type="number" name="phone" id="phone" required>
+                            </div>
+                        </div>
+                        
+                        <div class="formRow">
+                            <div class="inputField">
+                                <label for="password">*PASSWORD</label>
+                                <input type="password" name="password" id="password" required>
+                            </div>
+                            
+        
+                            <div class="inputField">
+                                <label for="confirm">*CONFIRM PASSWORD</label>
+                                <input type="password" name="confirm" id="confirm" required>
+                            </div>
+                        </div>
+                    </fieldset>
+                    
+                    
+                    <button type="submit">Create Account</button>
+                    <div class="redirect">Already have an account? <a href="#">Log in</a></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

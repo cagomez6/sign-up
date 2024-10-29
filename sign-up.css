@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url(assets/fonts/Norse-Bold.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, html {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.front {
+    display: flex;
+    width: 100%;
+}
+
+.splash {
+    flex: 1;
+    background: url("assets/images/splashArt.jpg") no-repeat;
+    background-size: cover;
+    height: 100vh;
+    min-width: 200px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    background-color: rgba(0, 0, 0, .5);
+    font-family: "Norse-Bold", sans-serif;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 15%;
+}
+
+.logoImg {
+    display: inline;
+    height: clamp(.5rem, 6rem + 3vw, 10rem);
+}
+
+.logoTxt {
+    font-size: clamp(.5rem, 6rem + 3vw, 10rem);
+}
+
+.imgCredit {
+    color: white;
+    margin-bottom: 5%;
+}
+
+.imgCredit>a {
+    color: white;
+}
+.signUpBody {
+    flex: 2;
+    background-color: rgb(216, 216, 216);
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    font-size: 2rem;
+}
+
+.formContainer {
+    
+}
+
+fieldset {
+    background-color: white;
+    border: none;
+}
+
+fieldset > p {
+    font-size: 2rem;
+}
+
+.formRow {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.inputField {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border-color: #E5E7EB;
+}
+
+input:valid {
+    border-color: rgb(75, 194, 75);
+}
+
+input:invalid[type="password"]{
+    border-color: red;
+}
+
+input:focus {
+    border-color: rgb(50, 175, 233);
+    outline: none;
+}
+
+button {
+    color: white;
+    background-color: rgb(69, 94, 73);
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 15px;
+    height: 50px;
+}
+
+button:hover {
+    background-color: rgb(45, 59, 47);
+}
+
+.redirect>a {
+    color: rgb(69, 94, 73);
+    font-weight: bold;
+    text-decoration: none;
+}
